@@ -5,6 +5,7 @@ import { createClient } from "@/utlis/supabase/server";
 import { Bell, LogIn, Rabbit, Shield, TrendingDown } from "lucide-react";
 import Image from "next/image";
 import { getProducts } from "./actions";
+import ProductCard from "@/components/ProductCard";
 
 export default async function Home() {
   const supabase = await createClient();
